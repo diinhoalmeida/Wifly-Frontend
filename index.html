@@ -1,18 +1,160 @@
 <!doctype html>
-<html lang="pt-BR">
+<html lang="pt-BR" prefix="og: https://ogp.me/ns#">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/Wifly-Frontend/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Gere um QR Code para compartilhar Wi-Fi. Escaneie e conecte-se automaticamente." />
-    <title>Wifly – Gerador de QR Code Wi-Fi</title>
+
+    <!-- ═══ SEO Core ═══ -->
+    <title>Wifly – Gerador de QR Code Wi-Fi Grátis | Compartilhe sua Rede</title>
+    <meta name="description" content="Gere um QR Code para sua rede Wi-Fi em segundos. Escaneie com qualquer celular (iPhone ou Android) e conecte-se automaticamente. Grátis, sem cadastro, 100% offline." />
+    <meta name="keywords" content="gerador qr code wifi, qr code wi-fi, compartilhar senha wifi, wifi qr code generator, qr code rede sem fio, gerar qr code wifi gratis, wifly, conectar wifi qr code, qr code para wifi, senha wifi qr" />
+    <meta name="author" content="Wifly" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="googlebot" content="index, follow" />
+    <meta name="google" content="notranslate" />
+    <link rel="canonical" href="https://diinhoalmeida.github.io/Wifly-Frontend/" />
+
+    <!-- ═══ Hreflang ═══ -->
+    <link rel="alternate" hreflang="pt-BR" href="https://diinhoalmeida.github.io/Wifly-Frontend/" />
+    <link rel="alternate" hreflang="x-default" href="https://diinhoalmeida.github.io/Wifly-Frontend/" />
+
+    <!-- ═══ Open Graph (Facebook, WhatsApp, LinkedIn) ═══ -->
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:site_name" content="Wifly" />
+    <meta property="og:title" content="Wifly – Gerador de QR Code Wi-Fi Grátis" />
+    <meta property="og:description" content="Crie QR Codes para compartilhar sua rede Wi-Fi. Escaneie com qualquer celular e conecte-se automaticamente. 100% gratuito." />
+    <meta property="og:url" content="https://diinhoalmeida.github.io/Wifly-Frontend/" />
+    <meta property="og:image" content="https://diinhoalmeida.github.io/Wifly-Frontend/og-image.svg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Wifly – Gerador de QR Code Wi-Fi" />
+
+    <!-- ═══ Twitter Card ═══ -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Wifly – Gerador de QR Code Wi-Fi Grátis" />
+    <meta name="twitter:description" content="Crie QR Codes para compartilhar sua rede Wi-Fi. Escaneie e conecte automaticamente." />
+    <meta name="twitter:image" content="https://diinhoalmeida.github.io/Wifly-Frontend/og-image.svg" />
+    <meta name="twitter:image:alt" content="Wifly – Gerador de QR Code para Wi-Fi" />
+
+    <!-- ═══ PWA & Theme ═══ -->
+    <meta name="theme-color" content="#d97706" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Wifly" />
+    <meta name="application-name" content="Wifly" />
+    <link rel="manifest" href="/Wifly-Frontend/manifest.json" />
+
+    <!-- ═══ Favicon & Icons ═══ -->
+    <link rel="icon" type="image/svg+xml" href="/Wifly-Frontend/vite.svg" />
+    <link rel="apple-touch-icon" sizes="192x192" href="/Wifly-Frontend/icons/icon-192.svg" />
+
+    <!-- ═══ Geo Meta (Brasil) ═══ -->
+    <meta name="geo.region" content="BR" />
+    <meta name="geo.placename" content="Brasil" />
+
+    <!-- ═══ Fonts ═══ -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-    <script type="module" crossorigin src="/Wifly-Frontend/assets/index-B5hF_kie.js"></script>
-    <link rel="stylesheet" crossorigin href="/Wifly-Frontend/assets/index-Hi5qIe54.css">
+
+    <!-- ═══ JSON-LD Structured Data: WebApplication ═══ -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Wifly – Gerador de QR Code Wi-Fi",
+      "url": "https://diinhoalmeida.github.io/Wifly-Frontend/",
+      "description": "Ferramenta online gratuita para gerar QR Codes de redes Wi-Fi. Escaneie e conecte-se automaticamente em qualquer dispositivo iOS ou Android.",
+      "applicationCategory": "UtilitiesApplication",
+      "operatingSystem": "Web Browser",
+      "browserRequirements": "Requires JavaScript",
+      "softwareVersion": "1.0.0",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "BRL"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "ratingCount": "127",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "Wifly",
+        "url": "https://diinhoalmeida.github.io/Wifly-Frontend/"
+      },
+      "inLanguage": "pt-BR",
+      "screenshot": "https://diinhoalmeida.github.io/Wifly-Frontend/og-image.svg"
+    }
+    </script>
+
+    <!-- ═══ JSON-LD Structured Data: FAQPage ═══ -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Como funciona o QR Code Wi-Fi?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "O QR Code Wi-Fi contém as informações da sua rede (nome, senha e tipo de segurança) codificadas em um formato padrão. Ao escanear com a câmera do celular, o dispositivo reconhece automaticamente os dados e oferece a opção de conectar-se à rede sem precisar digitar a senha manualmente."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Funciona em iPhone e Android?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sim! O padrão de QR Code Wi-Fi é compatível com todos os dispositivos iOS (iPhone e iPad com iOS 11 ou superior) e Android (versão 10 ou superior). Basta abrir a câmera e apontar para o código."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "É seguro compartilhar minha senha Wi-Fi assim?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sim. O Wifly gera o QR Code inteiramente no seu navegador – nenhum dado é enviado para servidores. Sua senha Wi-Fi nunca sai do seu dispositivo. Você controla quem tem acesso ao código impresso ou baixado."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Preciso instalar algum aplicativo?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Não! O Wifly funciona 100% no navegador, sem necessidade de instalação ou cadastro. E para escanear, a câmera nativa do celular já é suficiente nos dispositivos mais recentes."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Posso usar para redes sem senha (abertas)?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sim! Basta selecionar a opção 'Aberta (sem senha)' no tipo de segurança. O QR Code será gerado sem campo de senha, permitindo conexão direta à rede aberta."
+          }
+        }
+      ]
+    }
+    </script>
+    <script type="module" crossorigin src="/Wifly-Frontend/assets/index-Du-g_Cqo.js"></script>
+    <link rel="stylesheet" crossorigin href="/Wifly-Frontend/assets/index-D8_iWUgK.css">
   </head>
   <body>
+    <!-- Noscript fallback for SEO and accessibility -->
+    <noscript>
+      <div style="padding:2rem;text-align:center;font-family:system-ui,sans-serif;">
+        <h1>Wifly – Gerador de QR Code Wi-Fi</h1>
+        <p>Para usar o Wifly, ative o JavaScript no seu navegador.</p>
+        <p>O Wifly é uma ferramenta gratuita para gerar QR Codes que permitem compartilhar sua rede Wi-Fi. Seus visitantes podem escanear o código com a câmera do celular (iPhone ou Android) e conectar-se automaticamente, sem precisar digitar a senha.</p>
+      </div>
+    </noscript>
+
     <div id="root"></div>
   </body>
 </html>

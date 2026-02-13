@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#d97706" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#09090b" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="#09090b"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+  <!-- WiFi Icon -->
+  <g transform="translate(600, 220)" fill="none" stroke="#d97706" stroke-width="16" stroke-linecap="round">
+    <path d="M-100,-45 A140,140 0 0,1 100,-45" opacity="0.35"/>
+    <path d="M-66,-28 A92,92 0 0,1 66,-28" opacity="0.6"/>
+    <path d="M-33,-10 A46,46 0 0,1 33,-10" opacity="0.85"/>
+  </g>
+  <circle cx="600" cy="232" r="14" fill="#f59e0b"/>
+  <!-- Text -->
+  <text x="600" y="360" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-weight="700" font-size="72" fill="#ffffff" letter-spacing="-1">Wifly</text>
+  <text x="600" y="420" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-weight="400" font-size="28" fill="#a1a1aa">Gerador de QR Code Wi-Fi</text>
+  <!-- Subtitle -->
+  <text x="600" y="480" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-weight="400" font-size="20" fill="#71717a">Compartilhe sua rede em segundos • Grátis • Sem cadastro</text>
+  <!-- Top border accent -->
+  <rect x="300" y="0" width="600" height="3" rx="1.5" fill="#d97706" opacity="0.5"/>
+</svg>
